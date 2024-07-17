@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+</head>
+
+<body>
+    <div class="d-flex flex-row justify-content-center align-items-center full-height aboutContainerFlex">
+        <div class="d-inline-flex p-2 aboutMainFlex">
+            <div class="d-flex flex-column mb-3 aboutMainFlex1">
+                <img src="/Imgs/AboutMe Imgs/pfp-punpun.gif" class="aboutMeImg" alt="My cool gif" />
+                <div class="btn-resume">
+                    <div class="btn-resume-item open-button">
+                        <i class="btn1-resume fa-solid fa-folder-user"></i>
+                        <p>Resume</p>
+                    </div>
+                    <div class="btn-resume-item">
+                        <i class="btn1-resume fa-duotone fa-arrow-turn-left"></i>
+                        <a href="index.html" class="button-previous-page"><p>Previous Page</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center right-side-containers">
+            <div class="d-inline-flex p-2 contactsMainFlex">
+                <div class="d-flex flex-column mb-3 contactsMainFlex1">
+                    <p>&lt;/Connect With Me&gt;</p>
+                    <div class="d-flex flex-row bd-highlight mb-3 homePageBtn1">
+                        <div class="btn1-circle open-button" onclick="openDiscordModal()">
+                            <i class="btn1 fa-brands fa-discord"></i>
+                        </div>
+                        <div class="btn1-circle" onclick="openEmailModal()">
+                            <i class="btn1 fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="btn1-circle" onclick="openTwitterModal()">
+                            <i class="btn1 fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div class="btn1-circle" onclick="openGithubModal()">
+                            <i class="btn1 fa-brands fa-github"></i>
+                        </div>
+                        <div class="btn1-circle" onclick="openLinkedInModal()">
+                            <i class="btn1 fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-flex p-2 skillsMainFlex">
+                <div class="d-flex flex-column mb-3 skillsMainFlex1">
+                    <p>&lt;/Programming Languages|Tools&gt;</p>
+                    <div class="d-inline-flex p-2 skillsMainFlex">
+                        <p>&lt;/Programming Languages&gt;</p>
+                        <div class="d-flex flex-row bd-highlight mb-3 homePageBtn1">
+                            <div class="btn1-circle">
+                                <i class="btn2 devicon-python-plain"></i>
+                            </div>
+                            <div class="btn1-circle">
+                                <i class="btn2 devicon-java-plain"></i>
+                            </div>
+                            <div class="btn1-circle">
+                                <i class="btn2 devicon-azuresqldatabase-plain"></i>
+                            </div>
+                            <div class="btn1-circle">
+                                <i class="btn2 devicon-bash-plain"></i>
+                            </div>
+                            <div class="btn1-circle">
+                                <i class="btn2 devicon-cplusplus-plain"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-inline-flex p-2 skillsMainFlex">
+                        <div class="d-flex flex-column mb-3 skillsMainFlex1">
+                            <p>&lt;Tools&gt;</p>
+                            <div class="homePageBtn d-flex flex-row bd-highlight mb-3">
+                                <div class="btn1-circle">
+                                    <i class="btn2 devicon-python-plain"></i>
+                                </div>
+                                <div class="btn1-circle">
+                                    <i class="btn2 devicon-java-plain"></i>
+                                </div>
+                                <div class="btn1-circle">
+                                    <i class="btn2 devicon-azuresqldatabase-plain"></i>
+                                </div>
+                                <div class="btn1-circle">
+                                    <i class="btn2 devicon-bash-plain"></i>
+                                </div>
+                                <div class="btn1-circle">
+                                    <i class="btn2 devicon-cplusplus-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more right side containers as needed -->
+        </div>
+    </div>
+
+    <!-- <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="img/aboutMe Img/resume.jpg" alt="Resume Image" class="modal-image">
+        </div>
+    </div> -->
+
+
+    <!--Modal Parts-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;Close&times;</span>
+            <img src="Img/aboutMe Img/resume.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="discordModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('discordModal')">&times;</span>
+            <h2>Discord</h2>
+            <img src="Img/aboutMe Img/discord-info.png" alt="">
+            <p>This is the Discord modal content.</p>
+        </div>
+    </div>
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('emailModal')">&times;</span>
+            <h2>Email</h2>
+            <img src="Img/aboutMe Img/gmail-info.png" alt="">
+            <p>This is the Email modal content.</p>
+        </div>
+    </div>
+    <div id="twitterModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('twitterModal')">&times;</span>
+            <h2>Email</h2>
+            <img src="Img/aboutMe Img/twitter-info.png" alt="">
+            <p>This is the Email modal content.</p>
+        </div>
+    </div>
+    <div id="githubModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('githubModal')">&times;</span>
+            <h2>Email</h2>
+            <img src="Img/aboutMe Img/github-info.png" alt="">
+            <p>This is the Email modal content.</p>
+        </div>
+    </div>
+
+    <!--Modal Parts-->
+
+    <!--JavaScript Parts-->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#auto-type", {
+            strings: ["<b>Welcome</b>", "<i>Traveller</i>"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            loop: true,
+        });
+    </script>
+    <!--JavaScript Parts-->
+</body>
+
+</html>

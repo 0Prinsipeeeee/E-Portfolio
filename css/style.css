@@ -1,0 +1,350 @@
+@font-face {
+  font-family: 'LiveOverflow'; /*a name to be used later*/
+  src: url('/Fonts/LiveOverfont.woff'); /*URL to font*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7C6F64;
+}
+
+/*--[HomePage Part]--*/
+h1,span,p {
+  text-align: center;
+  margin: 0;
+  font-family: LiveOverflow;
+
+}
+
+.containerFlex {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+}
+.mainFlex {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: double;
+  border-color: #98971A;
+  background-color: #3C3836;
+
+}
+.mainFlex1 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mainFlex2 {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px; /* Optional padding for better visuals */
+}
+.full-height {
+  height: 100vh;
+}
+.homeImg, .homeImg1, .aboutMeImg, .aboutMeImg1, .aboutMeImg2 {
+  max-width: 50px; /* Adjust as needed */
+}
+
+
+/* .animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+} */
+
+.btn {
+  text-decoration: none;
+  position: relative;
+  margin: 0px 10px 10px 10px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: LiveOverflow;
+  height: 50px;
+  padding: 5px 20px;
+  background-color: #A89984;
+	border-bottom: 5px solid #1e1e1e;
+}
+
+
+.btn:hover  {
+  background-color: #A89984;
+  border-bottom: 5px solid #1e1e1e;
+	text-shadow: 0px -1px #1e1e1e;
+  text-decoration: none;
+}
+.btn:active
+{
+  background-color: #A89984;
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+.homePageBtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+/* Buttons */
+.homePageBtn .btn {
+  flex: 1 1 auto;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  min-width: 120px; /* Ensures buttons don't get too small */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Allow the buttons to shrink and grow */
+.homePageBtn .btn {
+  flex: 1 0 auto; /* flex-grow: 1, flex-shrink: 0, flex-basis: auto */
+}
+/*--[HomePage Part]--*/
+
+/*--[AboutMePage Part]--*/
+.aboutContainerFlex {
+  gap: 1rem;
+}
+.right-side-containers {
+  gap: 1rem;
+}
+.aboutMeImg {
+  max-width: 300px;
+  max-height: 300px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  
+}
+.aboutMainFlex {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: double;
+  flex-wrap: wrap;
+  border-color: #98971A;
+  background-color: #3C3836;
+
+
+}
+.aboutMainFlex1 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.contactsMainFlex {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: double;
+  flex-wrap: wrap;
+  border-color: #98971A;
+  background-color: #3C3836;
+}
+.contactsMainFlex1 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contactsMainFlex1 p {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.skillsMainFlex {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: double;
+  flex-wrap: wrap;
+  border-color: #98971A;
+  background-color: #3C3836;
+}
+.skillsMainFlex1 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.likesMainFlex {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: double;
+  flex-wrap: wrap;
+  border-color: #98971A;
+  background-color: #3C3836;
+}
+
+.likesMainFlex1 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+.btn1-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px; /* Adjust as needed */
+  height: 35px; /* Adjust as needed */
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #A89984; /* Background color */
+  border-bottom: 3px solid #1e1e1e;
+
+}
+
+.homePageBtn1 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn1 {
+  color: rgb(29, 29, 29); 
+  font-size: 19px; 
+  text-align: center;
+}
+
+.btn2 {
+  color: rgb(0, 0, 0); 
+  font-size: 27px; 
+  text-align: center;
+}
+
+
+.btn1-circle:hover  {
+  background-color: #A89984;
+  border-bottom: 5px solid #1e1e1e;
+	text-shadow: 0px 0px #1e1e1e;
+  text-decoration: none;
+}
+.btn1-circle:active
+{
+  background-color: #A89984;
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid #1e1e1e;
+}
+
+.btn-resume {
+  display: flex;
+  flex-direction: column; /* Set to column for vertical layout */
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start (left) */
+  border-radius: 5px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.btn-resume-item {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row; /* Ensure icon and text are in a row */
+  align-items: center;
+  margin-bottom: 8px; /* Space between items */
+}
+
+.button-previous-page {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-resume i {
+  margin-right: 8px;
+}
+
+.btn-resume p {
+  margin: 0;
+}
+
+
+.interestPassionContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  width: 100%; /* Ensure container takes full width */
+}
+
+/* Aligning Text to the Left */
+.left-align-text {
+  align-self: flex-start; /* Aligns the item to the start (left) of the container */
+  text-align: left; /* Ensure text alignment is left */
+  width: 100%; /* Ensure the paragraph takes the full width of the container */
+}
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #A89984;
+  margin: auto;
+  padding: 20px;
+  border: 10px double  #98971A;
+  width: 50%;
+  max-width: 800px;
+}
+
+/* The Close Button */
+.close {
+  color: #111111;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Image inside the modal */
+.modal-content img {
+  width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+/*--[AboutMePage Part]--*/
+
+
+
+
+
+
+
+
